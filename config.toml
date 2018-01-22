@@ -1,0 +1,48 @@
+baseurl = "https://spencerkrum.com/"
+languageCode = "en-US"
+title = "Spencer Krum"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+theme = "hugo-sustain"
+
+[permalinks]
+  post = "/:year/:month/:day/:slug"
+
+[params]
+  avatar = "Spencer_Krum.jpg"
+  author = "Spencer Krum"
+  description = "Personal website and blog of Spencer Krum"
+
+  # Custom assets can be linked with their paths relative to static/
+  custom_css = []
+  custom_js  = []
+
+[params.social]
+  Github        = "nibalizer"
+  Email         = "nibz@spencerkrum.com"
+  Twitter       = "nibalizer"
+  LinkedIn      = "nibalizer"
+
+## Main Menu
+[[menu.main]]
+  name = "blog"
+  weight = 100
+  identifier = "blog"
+  url = "/blog/"
+[[menu.main]]
+  name = "projects"
+  identifier = "projects"
+  weight = 200
+  url = "/projects/"
+[[menu.main]]
+  name = "talks"
+  identifier = "talks"
+  weight = 200
+  url = "/talks/"
+[[menu.main]]
+  name = "resume"
+  identifier = "resume"
+  weight = 300
+  url = "/resume/"
