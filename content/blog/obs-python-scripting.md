@@ -71,7 +71,7 @@ volt% make install
 After this I was reasonably sure I had compiled obs correctly, but it still didn't work. I eventually realized (by banging around with ``ldd`` that the system libraries like ``libobs.so.1`` were being loaded before the local libraries stored in ``~/local``. I ran ``pacman -R obs-studio-git`` to remove obs and its libraries from the system entirely. Then I used ``LD_LIBRARY_PATH`` to explicitly set which libraries I wanted involved.
 
 
-``
+```
 $ LD_LIBRARY_PATH=~/local/lib /home/nibz/local/bin/obs
 Attempted path: share/obs/obs-studio/locale/en-US.ini
 Attempted path: /home/nibz/local/share/obs/obs-studio/locale/en-US.ini
@@ -107,7 +107,7 @@ info: video settings reset:
         downscale filter:  Bicubic
 
 <snip>
-``
+```
 
 And just like that, I had scripting enabled. I tried out the example script Jim provided with the source release. It worked. I copied it and made some modifications, loaded that and it worked fine.
 
