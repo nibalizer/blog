@@ -3,6 +3,7 @@ title = "OBS at SCaLE16x"
 description = "Speaking event: Open Broadcaster Software at Southern California Linux Expo 16"
 tags = ['obs', 'scale', 'scale16x', 'la', 'los angeles', 'talk', 'community']
 categories = []
+date = "Mon Jan 22 22:58:28 CST 2018"
 +++
 
 I'm pleased to announce that I'll be speaking about OBS at SCaLE 16x in March!
