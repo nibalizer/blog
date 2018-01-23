@@ -57,10 +57,16 @@ pacman -Sy swig
 pacman -Sy python
 ```
 
+I recompiled and verified that python and lua were being detected:
 
+```
+volt% cmake -DUNIX_STRUCTURE=1 -DCMAKE_INSTALL_PREFIX=/home/nibz/local .. >> nibz_cmake.log
 volt% cat nibz_cmake.log| grep Script
 -- Scripting: Luajit supported
 -- Scripting: Python 3 supported
+volt% make -j 5
+volt% make install
+```
 
 After this I was reasonably sure I had compiled obs correctly, but it still didn't work. I eventually realized (by banging around with ``ldd`` that the system libraries like ``libobs.so.1`` were being loaded before the local libraries stored in ``~/local``. I ran ``pacman -R obs-studio-git`` to remove obs and its libraries from the system entirely. Then I used ``LD_LIBRARY_PATH`` to explicitly set which libraries I wanted involved.
 
