@@ -1,9 +1,13 @@
 +++
 title = "Hodor v4"
 description = "The fourth iteration of the get-me-a-vm script"
-tags = ['scripting', 'bash', 'vm', 'softlayer', 'work']
-categories = []
 date = "Mon Jan 22 23:32:47 CST 2018"
+tags = ["scripting",
+        "bash",
+        "vm",
+        "softlayer",
+        "work"]
+categories = []
 +++
 
 

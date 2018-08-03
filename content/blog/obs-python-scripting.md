@@ -3,7 +3,7 @@ title = "OBS Scripting in Python"
 description = "Testing out the new python scripting system in OBS"
 tags = []
 categories = []
-date: 2018-01-23T01:34:53-06:00
+date = 2018-01-23T01:34:53-06:00
 +++
 
 OBS just released version 21.0.1. This release includes a new subsystem for python and lua scripts.
